@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Hero.css';
-import Logo from '../assets/logo.svg';
+import Logo from '../assets/logo.png';
 import SearchIcon from '../assets/search.svg';
 import MenuIcon from '../assets/menu.svg';
 import imdbImage from '../assets/imdb.svg';
@@ -18,7 +18,7 @@ function Hero() {
 
   const handleSearchChange = (e) => {
     setSearchQuery(e.target.value);
-    // Fetch movie suggestions as the user types
+
     if (e.target.value) {
       fetch(
         `https://api.themoviedb.org/3/search/movie?api_key=1c0e6ac4d9b2df48035521ea9d796a78&query=${e.target.value}`
@@ -106,7 +106,7 @@ function Hero() {
                   <div className="suggestion-details">
                     <span className="suggestion-title">{movie.title}</span>
                     <span className="suggestion-release-date ml-4">
-                       {movie.release_date}
+                      {movie.release_date}
                     </span>
                   </div>
                 </div>
@@ -127,10 +127,7 @@ function Hero() {
         !searchQuery ? (
           null
         ) : (
-          <div
-            className="search-results absolute inset-0"
-            style={{ marginTop: '-300px' }}
-          >
+          <div className="search-results absolute inset-0" style={{ marginTop: '-300px' }}>
             {displayedResults.map((movie) => (
               <Link
                 to={`/movies/${movie.id}`} // Define the URL path for MovieDetails page
@@ -153,6 +150,7 @@ function Hero() {
           </div>
         )
       )}
+      
       <div className="w-[404px] text-white text-5xl font-bold font-['DM Sans'] leading-[56px] text-left " style={{ marginTop: '10rem' }}>
         <p>John Wick 3 : Parabellum</p>
         <div className="flex items-center mt-7">
@@ -174,6 +172,7 @@ function Hero() {
 }
 
 export default Hero;
+
 
 
 
