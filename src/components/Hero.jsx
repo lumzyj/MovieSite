@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Hero.css';
-import Logo from '../assets/logo.png';
+import Logo from '../assets/Logo.png';
 import SearchIcon from '../assets/search.svg';
 import MenuIcon from '../assets/menu.svg';
 import imdbImage from '../assets/imdb.svg';
