@@ -8,6 +8,7 @@ import imdbImage from '../assets/imdb.svg';
 import tomatoImage from '../assets/tomato.svg';
 import PlayIcon from '../assets/Play.svg';
 
+
 function Hero() {
   const [searchQuery, setSearchQuery] = useState('');
   const [searchResults, setSearchResults] = useState([]);
