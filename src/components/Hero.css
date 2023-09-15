@@ -1,6 +1,8 @@
 /* Hero.css */
 .hero {
     background-image: url('../assets/poster.png');
+    padding-left: 90px;
+    padding-right: 90px;
     background-size: cover;
     height: 100vh;
     background-position: center;
@@ -12,7 +14,6 @@
   
   .navbar {
     width: 100%;
-    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -72,7 +73,7 @@
   
   /* Style for individual search result cards */
   .search-result {
-    /* background-color: rgba(0, 0, 0, 0.7);  */
+    background-color: rgba(0, 0, 0, 0.7); 
     border-radius: 10px;
     margin: 10px; /* Add spacing between search result cards */
     padding: 10px; /* Add padding to the cards */
@@ -94,4 +95,152 @@
     margin-top: 10px;
   }
 
+  /* Add this CSS for the loader animation */
+
+.loading-indicator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Adjust the height as needed */
+  }
+  
+  .loader {
+    border: 8px solid #f3f3f3; /* Light gray border */
+    border-top: 8px solid #3498db; /* Blue border for the rotating part */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite; /* Apply the spin animation */
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+.btn-load{
+    display: block;
+    justify-content: center;
+}
+
+.load-more-button {
+    color: white;
+    cursor: pointer;
+  
+   
+  }
+
+  /* Hero.css */
+/* ... (previous styles) ... */
+
+.suggestions {
+    position: absolute;
+    top: 100%; /* Position below the search input */
+    left: 0;
+    right: 0;
+    background-color: #fff; /* Background color for the dropdown */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+    border-radius: 4px;
+    z-index: 100; /* Ensure the dropdown appears above other content */
+    max-height: 200px; /* Limit the dropdown height to avoid excessive scrolling */
+    overflow-y: auto; /* Enable vertical scrolling when needed */
+  }
+  
+  /* Style for individual movie suggestions */
+  .suggestion {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease; /* Smooth background color transition */
+  }
+  
+  .suggestion:hover {
+    background-color: #f2f2f2; /* Highlight suggestion on hover */
+  }
+  
+  /* Position the suggestions dropdown below the search box */
+  .search-box {
+    position: relative;
+  }
+  
+  /* ... (continue with your existing styles) ... */
+
+  
+  /* Style for movie suggestions dropdown */
+.suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  /* Style for individual movie suggestion */
+  .suggestion {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  /* Style for movie suggestion posters */
+  .suggestion-poster {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Style for movie suggestion details */
+  .suggestion-details {
+    flex-grow: 1;
+  }
+  
+  /* Style for movie suggestion title */
+  .suggestion-title {
+    font-weight: bold;
+  }
+  
+  /* Style for movie suggestion release date */
+  .suggestion-release-date {
+    color: #666;
+  }
+  
+  
+  /* Hero.css */
+
+/* Hero.css */
+
+/* Add media query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    .hero {
+      text-align: center;
+    }
+  
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .logo img {
+      max-width: 150px;
+    }
+  
+    /* Hide the search box on mobile */
+    .search-box {
+      display: none;
+    }
+
+    .menu, .sign-in{
+        display: none;
+    }
+  }
+  
+  
+  
+  
+  
+  
   

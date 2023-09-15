@@ -1,0 +1,20 @@
+.favorite-active {
+    fill: red; /* Change the color to red */
+    transition: fill 0.3s ease; /* Add a smooth transition effect */
+    background-color: red;
+   
+    
+  }
+  
+  /* Movies.css */
+
+/* Add media query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  
+
+    [data-testid="movie-card"] {
+        width: 50%; /* Display 2 movies per row on mobile */
+        /* Adjust other styles as needed for mobile */
+      }
+  }
+  

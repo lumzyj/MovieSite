@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer.css'; // Create a CSS file for styling
+import './Footer.css'; 
 import twitterIcon from '../assets/twitter.svg';
 import youtubeIcon from '../assets/youtube.svg';
 import instagramIcon from '../assets/instagram.svg';
@@ -7,7 +7,7 @@ import facebookIcon from '../assets/facebook.svg';
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer mt-20">
       <div className="social-icons">
         <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
           <img src={facebookIcon} alt="Facebook" className="icon" />

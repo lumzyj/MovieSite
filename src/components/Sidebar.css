@@ -1,0 +1,101 @@
+/* CSS (or Tailwind CSS classes) */
+.sidebar {
+    background-color: #ffff;
+    border-radius: 0px 45px 45px 0px;
+    border: 1px solid rgba(0, 0, 0, 0.30);
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    width: 226px;
+    height: 100vh;
+    flex-shrink: 0;
+    padding-top: 30px;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .sidebar-logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 40px;
+    color: black;
+  }
+  
+  .sidebar-items {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+  
+  .sidebar-item {
+    display: flex; /* Make items align horizontally */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 50px;
+  }
+  
+  .sidebar-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px; /* Add space between icon and text */
+  }
+  
+  /* Add this CSS for the text */
+  .sidebar-text {
+    color: rgba(51, 51, 51, 0.80);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  
+  .side-note-text{
+    width: 170px;
+    height: 210px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 1px solid rgba(190, 18, 60, 0.70);
+    background: rgba(248, 231, 235, 0.40);
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 30px;
+  }
+
+  .start{
+    width: 112px;
+    height: 30px;
+    border-radius: 30px;
+    background: rgba(190, 18, 60, 0.20);
+    color: #BE123C;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .quizes{
+    color: rgba(51, 51, 51, 0.80);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .peeps{
+    color: #666;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    line-height: normal;
+  }
+  
+ 
+
+   .sidebar-item:hover{
+   
+    transform: scale(2);
+  }

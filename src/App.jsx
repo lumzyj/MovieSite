@@ -1,31 +1,43 @@
 import React from 'react';
-import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Updated imports
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Movies from './components/Movies';
 import MovieDetails from './components/MovieDetails';
 import Hero from './components/Hero';
 import Footer from './components/Footer';
+import ComingSoon from './components/ComingSoon';
 
 function App() {
   return (
     <Router>
       <div>
-        {/* Hero component always displayed */}
-        <Hero />
-
-        <Routes> {/* Use Routes instead of Switch */}
-          <Route path="/" element={<Movies />} /> {/* Updated element prop */}
-          <Route path="/movies/:id" element={<MovieDetails />} /> {/* Updated element prop */}
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Hero />
+                <Movies />
+                <Footer />
+              </>
+            }
+          />
+          <Route
+            path="/movies/:id"
+            element={<MovieDetails />}
+          />
+          <Route
+            path="/coming-soon"
+            element={<ComingSoon />}
+          />
         </Routes>
-
-        {/* Footer component always displayed */}
-        <Footer />
       </div>
     </Router>
   );
 }
 
 export default App;
+
+
+
 
 

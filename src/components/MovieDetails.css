@@ -1,0 +1,185 @@
+/* MovieDetails.css */
+
+/* Container for the movie details */
+.movie-details-container {
+  display: flex;
+}
+
+/* Content within the movie details container */
+.movie-content {
+  flex: 1;
+  padding: 30px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+/* Styles for the movie trailer iframe */
+.movie-trailer iframe {
+  width: 100%;
+  height: 50vh;
+  border-radius: 20px;
+}
+
+/* Styles for movie information */
+.movie-info {
+  display: flex;
+  color: #404040;
+  margin-top: 20px;
+}
+
+/* Styles for genre tags */
+.movie-info p.genres {
+  color: #B91C1C;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  width: 84px;
+  height: 30px;
+  border-radius: 15px;
+  border: 1px solid #F8E7EB;
+  text-align: center;
+  padding: 4px;
+}
+
+/* Styles for movie rating */
+.movie-info .rating {
+  margin-left: auto;
+  justify-content: flex-end;
+}
+
+/* Styles for movie description */
+.movie-description {
+  display: flex;
+  margin-top: 20px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+/* Styles for description and movie makers */
+.description,
+.movie-makers {
+  color: #333;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+/* Styles for "See More" and "Options" buttons */
+.SeeMore {
+  background: #be123c;
+  color: #fff;
+}
+
+.options {
+  border: 1px solid #be123c;
+  background: rgba(190, 18, 60, 0.1);
+  color: #333;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.SeeMore,
+.options {
+  width: 360px;
+  height: 55px;
+  border-radius: 10px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* Styles for ticket and list icons */
+.ticket-icon,
+.list-icon {
+  margin-right: 10px;
+}
+
+/* Style for the "Show More" section */
+.showMore {
+  margin-top: 10px;
+}
+
+/* Styles for spans (text elements) */
+span {
+  color: #be123c;
+}
+
+/* Loading spinner animation */
+.loading-spinner {
+  border: 4px solid rgba(255, 0, 0, 0.2);
+  border-top: 4px solid red;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* MovieDetails.css */
+
+/* Add media query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  .movie-details-container {
+    flex-direction: column-reverse;
+  }
+
+  .movie-trailer iframe {
+    height: 300px;
+  }
+
+  .movie-content {
+    padding: 20px;
+  }
+
+  .movie-info {
+    flex-direction: column;
+  }
+
+  .movie-info p {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .genres {
+    margin-top: 10px;
+  }
+
+  .movie-description {
+    flex-direction: column;
+  }
+
+  .button-container {
+    margin-top: 20px;
+  }
+
+  .SeeMore,
+  .options {
+    width: 100%;
+  }
+
+  .sidebar {
+    display: none;
+  }
+}
+
+
+

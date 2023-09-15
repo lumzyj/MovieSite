@@ -1,0 +1,49 @@
+.movie-content {
+    flex: 1; /* Allow content to take up remaining space */
+    padding: 40px; /* Add spacing around the content */
+   
+}
+
+.movie-details-container {
+    display: flex;
+  }
+  
+  /* ComingSoon.css */
+.coming-soon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+  }
+  
+  .coming-soon-content {
+    text-align: center;
+  }
+  
+  .coming-soon-title {
+    font-size: 36px;
+    color: #333;
+    animation: bounce 2s infinite; /* Add a bounce animation */
+  }
+  
+  .coming-soon-text {
+    font-size: 20px;
+    color: #666;
+    margin-top: 20px;
+    transition: color 0.3s ease; /* Add a color transition */
+  }
+  
+  .coming-soon-text:hover {
+    color: #ff5722; /* Change text color on hover */
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px); /* Bounce effect */
+    }
+  }
+  
