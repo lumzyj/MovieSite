@@ -1,6 +1,6 @@
 import React from 'react';
 import './Sidebar.css';
-import LogoSvg from '../assets/Logo1.png';
+import LogoSvg from '../assets/logo1.png';
 import HomeImg from '../assets/Home.svg';
 import CalendarImg from '../assets/Calendar.svg';
 import LogoutImg from '../assets/Logout.svg';
