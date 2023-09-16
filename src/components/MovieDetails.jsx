@@ -59,16 +59,16 @@ const MovieDetails = () => {
           <p className="movietitle" data-testid="movie-title">
             {movieDetails.title}
           </p>
-          <p className='Release Year' data-testid="movie-release-date">
+          <p className='Release Year mr-5' data-testid="movie-release-date">
             {new Date(movieDetails.release_date).toUTCString()}
           </p>
-          <p className="PG Rating">
+          <p className="PG Rating mr-5">
             PG-13
           </p>
-          <p className= 'Movierun' data-testid="movie-runtime">
+          <p className= 'Movierun mr-5' data-testid="movie-runtime">
             {`${movieDetails.runtime} minutes`}
           </p>
-          <div className="genres">
+          <div className="genres mr-5">
             {movieDetails.genres?.map((genre) => (
               <span key={genre.id} className="genre mr-2">{genre.name}</span>
             ))}

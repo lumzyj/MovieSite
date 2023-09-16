@@ -44,7 +44,7 @@ function Movies() {
       it: 'Italy', // Italian
       // Add more language-country mappings as needed
     };
-    return languageToCountry[originalLanguage] || 'Korean';
+    return languageToCountry[originalLanguage] || 'Korea';
   };
 
   const getTomatoRating = (voteAverage, voteCount) => {
@@ -99,7 +99,7 @@ function Movies() {
       </div>
       <div className="px-4 flex flex-wrap">
         {movieList.map((movie) => (
-          <div key={movie.id} className="w-full md:w-1/2 lg:w-1/4 p-5 relative mx-auto" data-testid="movie-card">
+          <div key={movie.id} className="w-full md:w-1/2 lg:w-1/4 p-5 relative " data-testid="movie-card">
             {/* Favorite icon */}
             <img
               src={favoriteImage}
